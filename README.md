@@ -40,7 +40,7 @@ Detailed segmentation of customer purchasing behavior and frequency.
 ### 1. Data Modeling (Star Schema)
 To ensure optimal performance and accurate filtering, I implemented a **Star Schema**. This model connects a central **Sales Fact Table** to multiple **Dimension Tables** (Product, Customer, Geography, and a custom Calendar table). Proving a structured data model is key to efficient Power BI reports.
 
-[Image of a star schema for e-commerce data model showing Fact and Dimension tables]
+
 
 ![Data Model](Data-Model.png)
 
@@ -48,4 +48,23 @@ To ensure optimal performance and accurate filtering, I implemented a **Star Sch
 I authored custom DAX formulas to drive deeper business intelligence:
 * **Time Intelligence:** Utilized `TOTALYTD` and `SAMEPERIODLASTYEAR` for accurate trend comparisons.
 * **Profitability Metrics:** Created dynamic measures for **Net Profit %** and **Average Order Value (AOV)**.
-* **Ranking:** Implemented `RANKX` to identify the Top 10 products by revenue dynamically across categories
+* **Ranking:** Implemented `RANKX` to identify the Top 10 products by revenue dynamically across categories.
+
+### 3. Power Query Transformation (ETL)
+* Cleaned and standardized messy address strings into clean geographic hierarchies.
+* Handled null values and outliers in shipping cost columns to maintain data integrity.
+* Optimized data types to reduce file size and improve report refresh speeds.
+
+## 💡 Key Business Insights
+* **Revenue Drivers:** Analysis shows that high-volume categories often have lower margins, requiring a balanced promotional strategy.
+* **Market Expansion:** Regional analysis identified significant growth potential in under-served geographic zones.
+* **Operational Efficiency:** Identified a correlation between specific shipping methods and product return rates, suggesting a need for logistics optimization.
+
+---
+
+## 🛠️ How to Use
+1. **Interactive Experience:** If you have Power BI Desktop, download the `.pbix` from the link above to interact with the slicers and drill-throughs.
+2. **Static Review:** Use the images in this repository to review the UI/UX design and data architecture.
+
+## 🏷️ Tags
+`power-bi` | `dax` | `data-modeling` | `amazon-sales` | `business-intelligence` | `star-schema` | `data-visualization`
