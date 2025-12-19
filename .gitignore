@@ -205,3 +205,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Power BI Desktop Files ---
+# Ignore temporary and auto-recovery files
+*.pbit
+*.pbix.backup
+Temp.pbix
+
+# --- Data & Large Files ---
+# Since you are hosting these on Google Drive, 
+# you might want to ignore local copies of the CSV to stay under 100MB
+*.csv
+*.xlsx
+*.xls
+
+# --- Operating System & IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Sensitive Info ---
+.env
+credentials.txt
