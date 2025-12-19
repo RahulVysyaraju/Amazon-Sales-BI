@@ -1,7 +1,7 @@
 # 📦 Amazon Global Sales Analysis
 
 <p align="center">
-  <img src="Amazon-Logo-White-PNG-Image.png" alt="Amazon Logo" width="300">
+  <img src="Amazon-Logo-White-PNG-Image.png" alt="Amazon Logo" width="500">
 </p>
 
 ## 🎯 Project Overview
